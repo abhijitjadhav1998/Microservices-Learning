@@ -6,7 +6,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.abhijit.microservices.currencyconversionmicroservice.Entity.CurrencyConversion;
 
-@FeignClient(name = "currency-exchange", url = "http://localhost:8000/")
+//@FeignClient(name = "currency-exchange", url = "http://localhost:8000/")
+@FeignClient(name = "currency-exchange") // load balancing enabled
 public interface CurrencyConversionProxy {
 	@GetMapping("/currency-exchange/from/{from}/to/{to}")
 	public CurrencyConversion retriveExchangeValue(@PathVariable String from,@PathVariable String to);
