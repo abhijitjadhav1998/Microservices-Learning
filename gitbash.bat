@@ -1,4 +1,4 @@
 git status
 git add .
-git commit -m "added java code"
+git commit -m "added some microservice code"
 git push
