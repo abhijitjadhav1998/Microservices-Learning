@@ -26,3 +26,5 @@ hs_err_pid*
 .mvn/*
 mvnw
 mvnw.cmd
+
+!spring-cloud-config-server/git-springcloud-config-repo/*
